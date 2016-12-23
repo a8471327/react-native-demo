@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, View, Navigator} from 'react-native';
+import CodePush from 'react-native-code-push';
 
 import MyScene from './module/MyScene';
 
 class TestApp extends Component {
+    componentWillMount() {
+        //访问慢,不稳定
+        CodePush.checkForUpdate('y1xAOHGdxanPlJ_Ph_yBHhSf-1TSEyEVBaHEM').then((update)=>{
+            if(update){
+                CodePush.sync({
+                    deploymentKey: 'deployment-key-here',
+                    updateDialog: {
+                        optionalIgnoreButtonLabel: '稍后',
+                        optionalInstallButtonLabel: '后台更新',
+                        optionalUpdateMessage: '有新版本了，是否更新？',
+                        title: '更新提示'
+                    },
+                    installMode: CodePush.InstallMode.IMMEDIATE
+                });
+            }
+        });
+    }
     render() {
         return (
             <Navigator
