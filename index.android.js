@@ -10,7 +10,7 @@ class TestApp extends Component {
         CodePush.checkForUpdate('y1xAOHGdxanPlJ_Ph_yBHhSf-1TSEyEVBaHEM').then((update)=>{
             if(update){
                 CodePush.sync({
-                    deploymentKey: 'deployment-key-here',
+                    deploymentKey: 'y1xAOHGdxanPlJ_Ph_yBHhSf-1TSEyEVBaHEM',
                     updateDialog: {
                         optionalIgnoreButtonLabel: '稍后',
                         optionalInstallButtonLabel: '后台更新',
@@ -25,7 +25,7 @@ class TestApp extends Component {
     render() {
         return (
             <Navigator
-                initialRoute={{ title: 'My Initial Scene', index: 0 }}
+                initialRoute={{ title: 'My Initial Scene(第二次更新)', index: 0 }}
                 renderScene={(route, navigator) =>
                     <MyScene
                         title={route.title}
