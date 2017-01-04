@@ -108,34 +108,36 @@ export default class Rule extends Component{
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <View style={styles.integral}>
-                        <Image source={require('../../images/money.png')} />
-                        <Text style={styles.valText}>9483</Text>
+                <ScrollView>
+                    <View style={styles.header}>
+                        <View style={styles.integral}>
+                            <Image source={require('../../images/money.png')} />
+                            <Text style={styles.valText}>9483</Text>
+                        </View>
+                        <TouchableOpacity style={styles.action} onPress={() => this._gotoHome()}>
+                            <Text style={styles.actionText}>前往积分商城&#10148;</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.btn}>
+                            <Text style={styles.btnStatus}>签到</Text>
+                            <Text style={styles.btnTime}>连续4天</Text>
+                        </TouchableOpacity>
+                        <Text style={styles.desc}>今日签到可领1积分，再签3天可额外获得10积分</Text>
                     </View>
-                    <TouchableOpacity style={styles.action} onPress={() => this._gotoHome()}>
-                        <Text style={styles.actionText}>前往积分商城&#10148;</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.btn}>
-                        <Text style={styles.btnStatus}>签到</Text>
-                        <Text style={styles.btnTime}>连续4天</Text>
-                    </TouchableOpacity>
-                    <Text style={styles.desc}>今日签到可领1积分，再签3天可额外获得10积分</Text>
-                </View>
-                <View style={styles.calendar}>
-                    <Calendar />
-                </View>
-                <View style={styles.rule}>
-                    <View style={styles.ruleLabel}>
-                        <Image source={require('../../images/note.png')} />
-                        <Text style={styles.ruleLabelText}>签到规则</Text>
+                    <View style={styles.calendar}>
+                        <Calendar />
                     </View>
-                    <View>
-                        <Text style={styles.ruleDesc}>1、每个用户每天可签到1次，每次可领5积分</Text>
-                        <Text style={styles.ruleDesc}>2、连续签到7、15、28天可额外获得10、15、20积分</Text>
-                        <Text style={styles.ruleDesc}>3、若某天漏签，连续签到天数将清零重新计算</Text>
+                    <View style={styles.rule}>
+                        <View style={styles.ruleLabel}>
+                            <Image source={require('../../images/note.png')} />
+                            <Text style={styles.ruleLabelText}>签到规则</Text>
+                        </View>
+                        <View>
+                            <Text style={styles.ruleDesc}>1、每个用户每天可签到1次，每次可领5积分</Text>
+                            <Text style={styles.ruleDesc}>2、连续签到7、15、28天可额外获得10、15、20积分</Text>
+                            <Text style={styles.ruleDesc}>3、若某天漏签，连续签到天数将清零重新计算</Text>
+                        </View>
                     </View>
-                </View>
+                </ScrollView>
             </View>
         );
     }

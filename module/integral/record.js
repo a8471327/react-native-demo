@@ -107,6 +107,36 @@ export default class Record extends Component{
                             <Text style={styles.valText}>100</Text>
                         </View>
                     </View>
+                    <View style={styles.item}>
+                        <View style={styles.desc}>
+                            <Text style={styles.label}>全场通用50-10优惠券</Text>
+                            <Text style={styles.time}>兑换时间：2016-12-18 15:33:29</Text>
+                        </View>
+                        <View style={styles.val}>
+                            <Image source={require('../../images/money.png')} />
+                            <Text style={styles.valText}>100</Text>
+                        </View>
+                    </View>
+                    <View style={styles.item}>
+                        <View style={styles.desc}>
+                            <Text style={styles.label}>全场通用50-10优惠券</Text>
+                            <Text style={styles.time}>兑换时间：2016-12-18 15:33:29</Text>
+                        </View>
+                        <View style={styles.val}>
+                            <Image source={require('../../images/money.png')} />
+                            <Text style={styles.valText}>100</Text>
+                        </View>
+                    </View>
+                    <View style={styles.item}>
+                        <View style={styles.desc}>
+                            <Text style={styles.label}>全场通用50-10优惠券</Text>
+                            <Text style={styles.time}>兑换时间：2016-12-18 15:33:29</Text>
+                        </View>
+                        <View style={styles.val}>
+                            <Image source={require('../../images/money.png')} />
+                            <Text style={styles.valText}>100</Text>
+                        </View>
+                    </View>
                 </ScrollView>
             </View>
         );

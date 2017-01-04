@@ -154,6 +154,34 @@ export default class MyIntegral extends Component{
                             </View>
                             <Text style={styles.val}>+1</Text>
                         </View>
+                        <View style={styles.item}>
+                            <View style={styles.desc}>
+                                <Text style={styles.label}>每日签到</Text>
+                                <Text style={styles.time}>2016-12-18 15:33:29</Text>
+                            </View>
+                            <Text style={styles.val}>+1</Text>
+                        </View>
+                        <View style={styles.item}>
+                            <View style={styles.desc}>
+                                <Text style={styles.label}>每日签到</Text>
+                                <Text style={styles.time}>2016-12-18 15:33:29</Text>
+                            </View>
+                            <Text style={styles.val}>+1</Text>
+                        </View>
+                        <View style={styles.item}>
+                            <View style={styles.desc}>
+                                <Text style={styles.label}>每日签到</Text>
+                                <Text style={styles.time}>2016-12-18 15:33:29</Text>
+                            </View>
+                            <Text style={styles.val}>+1</Text>
+                        </View>
+                        <View style={styles.item}>
+                            <View style={styles.desc}>
+                                <Text style={styles.label}>每日签到</Text>
+                                <Text style={styles.time}>2016-12-18 15:33:29</Text>
+                            </View>
+                            <Text style={styles.val}>+1</Text>
+                        </View>
                     </ScrollView>
                 </View>
             </View>

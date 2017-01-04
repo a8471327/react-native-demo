@@ -5,9 +5,7 @@ import React, {
 import {
     Text,
     View,
-    TouchableOpacity,
-    StyleSheet,
-    ScrollView
+    StyleSheet
 } from 'react-native';
 
 import Header from './header'
@@ -58,11 +56,9 @@ export default class MyScene extends Component {
             <View style={styles.container}>
                 <Header {...this.props}/>
                 <View style={styles.content}>
-                    <ScrollView>
-                        {
-                            this.state.sceneComponent[this.props.title]
-                        }
-                    </ScrollView>
+                {
+                    this.state.sceneComponent[this.props.title]
+                }
                 </View>
             </View>
         );
